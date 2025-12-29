@@ -131,6 +131,11 @@ WordChoiceViewer.prototype = {
         if (strYear) {
             this.m_strYear = strYear;
         }
+
+        let strTarget = WordChoiceViewer.s_GetURLParam("t");
+        if (strTarget) {
+            this.m_strTarget = strTarget;
+        }
     },
     initLayout: function() {
         if (!this.m_pRootNode) {
@@ -148,6 +153,9 @@ WordChoiceViewer.prototype = {
         let pSelNode = document.createElement("select");
         this.m_pOptions.forEach(WordChoiceViewer.s_BindFunc(this, function (pOptObj, idx) {
             if (pOptObj.year && pOptObj.year.toString() != this.m_strYear) {
+                return;
+            }
+            if (pOptObj.target && pOptObj.target.toString() != this.m_strTarget) {
                 return;
             }
             let pOpt = document.createElement("option");
@@ -188,7 +196,7 @@ WordChoiceViewer.prototype = {
             }
             const strImgB64 = this.m_pCanvas.toDataURL("image/png");
             const pOptObj = this.m_pOptions[this.m_nOptIdx];
-            const strFileName = `jym_wordchoice_${this.m_strYear}_${pOptObj.txt}.png`.replace(/ /g, "+");
+            const strFileName = `${this.m_strTarget || "test"}_wordchoice_${this.m_strYear}_${pOptObj.txt}.png`.replace(/ /g, "+");
             const a = document.createElement("a");
             a.setAttribute("href", strImgB64);
             a.setAttribute('download', strFileName);
