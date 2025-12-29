@@ -1,15 +1,14 @@
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/* @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url(http://fonts.googleapis.com/earlyaccess/notosanssc.css);
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 @import url(https://fonts.googleapis.com/css?family=Noto%20Serif%20KR);
 @import url(https://fonts.googleapis.com/css?family=Noto%20Serif%20JP);
-@import url(https://fonts.googleapis.com/css?family=Noto%20Serif%20SC);
+@import url(https://fonts.googleapis.com/css?family=Noto%20Serif%20SC); */
 
 @font-face {
-    font-family: 'Cafe24Oneprettynight';
-    src: url('http://jym.or.kr/wordchoice/font/Cafe24Oneprettynight.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'PretendardMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
+    font-display: swap;
 }
 
 html {

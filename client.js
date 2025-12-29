@@ -72,6 +72,15 @@ WordChoiceViewer.s_SplitText = function (strText, pCtx, nMaxWidth) {
     return pTexts;
 };
 
+WordChoiceViewer.s_bookNamesOld = ['창세기', '출애굽기', '레위기', '민수기', '신명기', '여호수아', '사사기', '룻기', '사무엘상', '사무엘하', '열왕기상', '열왕기하', '역대상', '역대하', '에스라', '느헤미야', '에스더', '욥기', '시편', '잠언', '전도서', '아가', '이사야', '예레미야', '예레미야 애가', '에스겔', '다니엘', '호세아', '요엘', '아모스', '오바댜', '요나', '미가', '나훔', '하박국', '스바냐', '학개', '스가랴', '말라기'];
+WordChoiceViewer.s_bookNamesNew = ['마태복음', '마가복음', '누가복음', '요한복음', '사도행전', '로마서', '고린도전서', '고린도후서', '갈라디아서', '에베소서', '빌립보서', '골로새서', '데살로니가전서', '데살로니가후서', '디모데전서', '디모데후서', '디도서', '빌레몬서', '히브리서', '야고보서', '베드로전서', '베드로후서', '요한1서', '요한2서', '요한3서', '유다서', '요한계시록'];
+WordChoiceViewer.s_GetBookName = function (book=1) {
+    if (book - 1 < this.s_bookNamesOld.length) {
+        return this.s_bookNamesOld[book - 1];
+    }
+    return this.s_bookNamesNew[book - 1 - this.s_bookNamesOld.length];
+};
+
 WordChoiceViewer.prototype = {
     // Public
     Start: function() {
@@ -223,7 +232,6 @@ WordChoiceViewer.prototype = {
         this.m_pLogger = pLogger;
     },
     loadWordInfo: function() {
-        // let strReqUrl = `http://jym.or.kr/wordchoice/service/get.php?wno=${this.m_nWno}`;
         const wno = this.m_nWno;
         return new Promise(function (resolve, reject) {
             fetch(`./data.json`)
@@ -395,11 +403,11 @@ WordChoiceViewer.prototype = {
         // pCtx.fillRect(pAreaSize.x, pAreaSize.y, pAreaSize.width, pAreaSize.height);
 
         let nFontSize = Math.floor(Math.min(pAreaSize.width, pAreaSize.height) / 14);
-        let strFontFamily = "Noto Serif KR";
+        let strFontFamily = "PretendardMedium";
         let nLineHeight = Math.ceil(nFontSize * 1.8);
         let strFontColor = "rgba(0, 0, 0, 0.8)";
-        // let strText = this.m_pWInfo.contents.default;
-        let strText = this.m_pWInfo.verse;
+        // let strText = this.m_pWInfo.verse;
+        let strText = this.m_pWInfo.contents.join(" ");
         let pTexts = new Array();
         if (pContStyle) {
             if (pContStyle.fontSize) {
@@ -409,7 +417,7 @@ WordChoiceViewer.prototype = {
                 nLineHeight = pContStyle.lineHeight;
             }
             if (pContStyle.fontFamily) {
-                strFontFamily = pContStyle.fontFamily.kr;
+                strFontFamily = pContStyle.fontFamily;
             }
             if (pContStyle.fontColor) {
                 strFontColor = pContStyle.fontColor;
@@ -429,15 +437,13 @@ WordChoiceViewer.prototype = {
             pTexts = WordChoiceViewer.s_SplitText(strText, pCtx, nMaxWidth);
         }
 
-        if (bibleJS) {
-            // let strBookName = bibleJS.getBookName(this.m_pWInfo.book, 'B_GAE');
-            let strBookName = this.m_pWInfo.bookname;
-            pTexts.push(" ");
-            if (this.m_pWInfo.end) {
-                pTexts.push(`── ${strBookName} ${this.m_pWInfo.chapter}:${this.m_pWInfo.start}-${this.m_pWInfo.end} ──`);
-            } else {
-                pTexts.push(`── ${strBookName} ${this.m_pWInfo.chapter}:${this.m_pWInfo.start} ──`);
-            }
+        let strBookName = WordChoiceViewer.s_GetBookName(this.m_pWInfo.book);
+        // let strBookName = this.m_pWInfo.bookname;
+        pTexts.push(" ");
+        if (this.m_pWInfo.end) {
+            pTexts.push(`${strBookName} ${this.m_pWInfo.chapter}:${this.m_pWInfo.start}-${this.m_pWInfo.end}`);
+        } else {
+            pTexts.push(`${strBookName} ${this.m_pWInfo.chapter}:${this.m_pWInfo.start}`);
         }
 
         let nRemainingHeight = (pAreaSize.height - nLineHeight * pTexts.length);
