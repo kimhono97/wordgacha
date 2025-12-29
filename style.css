@@ -1,0 +1,83 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanssc.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/css?family=Noto%20Serif%20KR);
+@import url(https://fonts.googleapis.com/css?family=Noto%20Serif%20JP);
+@import url(https://fonts.googleapis.com/css?family=Noto%20Serif%20SC);
+
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('http://jym.or.kr/wordchoice/font/Cafe24Oneprettynight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    font-family: 'Noto Sans KR', 'Noto Sans CN', 'Noto Sans JP';
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    user-select: none;
+}
+
+.wc-layout-root {
+    display: flex;
+    flex-direction: column;
+}
+.wc-layout-ctrl {
+    background-color: rgba(200, 200, 200, 0.3);
+    position: absolute;
+    margin: 0.5em;
+    padding: 0.5em;
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+.wc-layout-cont {
+    background-color: rgba(0, 0, 0, 0.8);
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wc-layout-ctrl select,
+.wc-layout-ctrl button {
+    margin: 0.5em;
+    padding: 0.5em;
+}
+.wc-layout-ctrl input[type="color"] {
+    margin: 0.5em;
+    width: 100px;
+    height: auto;
+}
+
+.wc-comp-canvas {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.wc-comp-logger {
+    position: absolute;
+    bottom: 0;
+
+    width: 60%;
+    height: 200px;
+
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: "Consolas";
+
+    cursor: pointer;
+}

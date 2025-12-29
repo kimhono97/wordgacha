@@ -1,0 +1,549 @@
+[
+    {
+        "id": 1,
+        "verse": "수고하고 무거운 짐 진 자들아 다 내게로 오라 내가 너희를 쉬게 하리라",
+        "start": 28,
+        "chapter": 11,
+        "bookname": "마태복음"
+    },
+    {
+        "id": 2,
+        "verse": "내게 능력 주시는 자 안에서 내가 모든 것을 할 수 있느니라",
+        "start": 13,
+        "chapter": 4,
+        "bookname": "빌립보서"
+    },
+    {
+        "id": 3,
+        "verse": "너는 마음을 다하여 여호와를 신뢰하고 네 명철을 의지하지 말라",
+        "start": 5,
+        "chapter": 3,
+        "bookname": "잠언"
+    },
+    {
+        "id": 4,
+        "verse": "여호와는 나의 목자시니 내게 부족함이 없으리로다",
+        "start": 1,
+        "chapter": 23,
+        "bookname": "시편"
+    },
+    {
+        "id": 5,
+        "verse": "모든 것이 합력하여 선을 이루느니라",
+        "start": 28,
+        "chapter": 8,
+        "bookname": "로마서"
+    },
+    {
+        "id": 6,
+        "verse": "두려워하지 말라 내가 너와 함께 함이라",
+        "start": 10,
+        "chapter": 41,
+        "bookname": "이사야"
+    },
+    {
+        "id": 7,
+        "verse": "나의 하나님이 그리스도 예수 안에서 그 풍성한 대로 너희 모든 쓸 것을 채우시리라",
+        "start": 19,
+        "chapter": 4,
+        "bookname": "빌립보서"
+    },
+    {
+        "id": 8,
+        "verse": "여호와를 기뻐하라 그가 네 마음의 소원을 네게 이루어 주시리로다",
+        "start": 4,
+        "chapter": 37,
+        "bookname": "시편"
+    },
+    {
+        "id": 9,
+        "verse": "너희는 먼저 그의 나라와 그의 의를 구하라",
+        "start": 33,
+        "chapter": 6,
+        "bookname": "마태복음"
+    },
+    {
+        "id": 10,
+        "verse": "사람이 감당할 시험 밖에는 너희가 당한 것이 없나니",
+        "start": 13,
+        "chapter": 10,
+        "bookname": "고린도전서"
+    },
+    {
+        "id": 11,
+        "verse": "구하라 그러면 너희에게 주실 것이요 찾으라 그러면 찾을 것이요",
+        "start": 7,
+        "chapter": 7,
+        "bookname": "마태복음"
+    },
+    {
+        "id": 12,
+        "verse": "내 은혜가 네게 족하도다",
+        "start": 9,
+        "chapter": 12,
+        "bookname": "고린도후서"
+    },
+    {
+        "id": 13,
+        "verse": "항상 기뻐하라 쉬지 말고 기도하라 범사에 감사하라",
+        "end": 18,
+        "start": 16,
+        "chapter": 5,
+        "bookname": "데살로니가전서"
+    },
+    {
+        "id": 14,
+        "verse": "여호와를 기다리는 자는 새 힘을 얻으리니",
+        "start": 31,
+        "chapter": 40,
+        "bookname": "이사야"
+    },
+    {
+        "id": 15,
+        "verse": "믿음은 바라는 것들의 실상이요 보이지 않는 것들의 증거니",
+        "start": 1,
+        "chapter": 11,
+        "bookname": "히브리서"
+    },
+    {
+        "id": 16,
+        "verse": "너희 염려를 다 주께 맡기라 이는 그가 너희를 돌보심이라",
+        "start": 7,
+        "chapter": 5,
+        "bookname": "베드로전서"
+    },
+    {
+        "id": 17,
+        "verse": "내일 일을 위하여 염려하지 말라",
+        "start": 34,
+        "chapter": 6,
+        "bookname": "마태복음"
+    },
+    {
+        "id": 18,
+        "verse": "여호와는 마음이 상한 자를 가까이 하시고",
+        "start": 18,
+        "chapter": 34,
+        "bookname": "시편"
+    },
+    {
+        "id": 19,
+        "verse": "내가 너를 지명하여 불렀나니 너는 내 것이라",
+        "start": 1,
+        "chapter": 43,
+        "bookname": "이사야"
+    },
+    {
+        "id": 20,
+        "verse": "평안을 너희에게 끼치노니 내 평안을 너희에게 주노라",
+        "start": 27,
+        "chapter": 14,
+        "bookname": "요한복음"
+    },
+    {
+        "id": 21,
+        "verse": "하나님이 우리에게 주신 것은 두려워하는 마음이 아니요",
+        "start": 7,
+        "chapter": 1,
+        "bookname": "디모데후서"
+    },
+    {
+        "id": 22,
+        "verse": "주의 인자하심이 생명보다 나으므로",
+        "start": 3,
+        "chapter": 63,
+        "bookname": "시편"
+    },
+    {
+        "id": 23,
+        "verse": "내가 깊은 곳에서 주께 부르짖었나이다",
+        "start": 1,
+        "chapter": 130,
+        "bookname": "시편"
+    },
+    {
+        "id": 24,
+        "verse": "주께서 생명의 길을 내게 보이시리니",
+        "start": 11,
+        "chapter": 16,
+        "bookname": "시편"
+    },
+    {
+        "id": 25,
+        "verse": "내가 산을 향하여 눈을 들리라",
+        "start": 1,
+        "chapter": 121,
+        "bookname": "시편"
+    },
+    {
+        "id": 26,
+        "verse": "감사함으로 그의 문에 들어가며",
+        "start": 4,
+        "chapter": 100,
+        "bookname": "시편"
+    },
+    {
+        "id": 27,
+        "verse": "너희 빛이 사람 앞에 비치게 하라",
+        "start": 16,
+        "chapter": 5,
+        "bookname": "마태복음"
+    },
+    {
+        "id": 28,
+        "verse": "사랑은 오래 참고 사랑은 온유하며",
+        "start": 4,
+        "chapter": 13,
+        "bookname": "고린도전서"
+    },
+    {
+        "id": 29,
+        "verse": "선을 행하되 낙심하지 말지니",
+        "start": 9,
+        "chapter": 6,
+        "bookname": "갈라디아서"
+    },
+    {
+        "id": 30,
+        "verse": "내가 세상 끝날까지 너희와 항상 함께 있으리라",
+        "start": 20,
+        "chapter": 28,
+        "bookname": "마태복음"
+    },
+    {
+        "id": 31,
+        "verse": "주는 나의 피난처요 나의 요새요",
+        "start": 2,
+        "chapter": 91,
+        "bookname": "시편"
+    },
+    {
+        "id": 32,
+        "verse": "내 영혼아 잠잠히 하나님만 바라라",
+        "start": 5,
+        "chapter": 62,
+        "bookname": "시편"
+    },
+    {
+        "id": 33,
+        "verse": "그의 나라와 그의 의를 먼저 구하라",
+        "start": 33,
+        "chapter": 6,
+        "bookname": "마태복음"
+    },
+    {
+        "id": 34,
+        "verse": "여호와의 눈은 의인을 향하시고",
+        "start": 15,
+        "chapter": 34,
+        "bookname": "시편"
+    },
+    {
+        "id": 35,
+        "verse": "새 계명을 너희에게 주노니 서로 사랑하라",
+        "start": 34,
+        "chapter": 13,
+        "bookname": "요한복음"
+    },
+    {
+        "id": 36,
+        "verse": "오직 성령의 열매는 사랑과 희락과 화평과",
+        "start": 22,
+        "chapter": 5,
+        "bookname": "갈라디아서"
+    },
+    {
+        "id": 37,
+        "verse": "나의 도움이 천지를 지으신 여호와에게서로다",
+        "start": 2,
+        "chapter": 121,
+        "bookname": "시편"
+    },
+    {
+        "id": 38,
+        "verse": "주 안에서 항상 기뻐하라",
+        "start": 4,
+        "chapter": 4,
+        "bookname": "빌립보서"
+    },
+    {
+        "id": 39,
+        "verse": "범사에 감사하라",
+        "start": 18,
+        "chapter": 5,
+        "bookname": "데살로니가전서"
+    },
+    {
+        "id": 40,
+        "verse": "하나님은 사랑이시라",
+        "start": 8,
+        "chapter": 4,
+        "bookname": "요한일서"
+    },
+    {
+        "id": 41,
+        "verse": "내가 너와 함께 있어 너를 지키고",
+        "start": 15,
+        "chapter": 28,
+        "bookname": "창세기"
+    },
+    {
+        "id": 42,
+        "verse": "나를 사랑하는 자들이 나의 사랑을 입으며",
+        "start": 17,
+        "chapter": 8,
+        "bookname": "잠언"
+    },
+    {
+        "id": 43,
+        "verse": "의인의 길은 돋는 햇살 같아서",
+        "start": 18,
+        "chapter": 4,
+        "bookname": "잠언"
+    },
+    {
+        "id": 44,
+        "verse": "주께서 나를 푸른 초장에 누이시며",
+        "start": 2,
+        "chapter": 23,
+        "bookname": "시편"
+    },
+    {
+        "id": 45,
+        "verse": "내 속에 정한 마음을 창조하시고",
+        "start": 10,
+        "chapter": 51,
+        "bookname": "시편"
+    },
+    {
+        "id": 46,
+        "verse": "너희가 내 이름으로 무엇을 구하든지",
+        "start": 13,
+        "chapter": 14,
+        "bookname": "요한복음"
+    },
+    {
+        "id": 47,
+        "verse": "예수 그리스도는 어제나 오늘이나 영원토록 동일하시니라",
+        "start": 8,
+        "chapter": 13,
+        "bookname": "히브리서"
+    },
+    {
+        "id": 48,
+        "verse": "이것을 너희에게 이르는 것은 너희로 내 안에서 평안을 누리게 하려 함이라",
+        "start": 33,
+        "chapter": 16,
+        "bookname": "요한복음"
+    },
+    {
+        "id": 49,
+        "verse": "하늘이 땅보다 높음 같이",
+        "start": 9,
+        "chapter": 55,
+        "bookname": "이사야"
+    },
+    {
+        "id": 50,
+        "verse": "우리가 사랑함은 그가 먼저 우리를 사랑하셨음이라",
+        "start": 19,
+        "chapter": 4,
+        "bookname": "요한일서"
+    },
+    {
+        "id": 51,
+        "verse": "내가 복음을 부끄러워하지 아니하노니",
+        "start": 16,
+        "chapter": 1,
+        "bookname": "로마서"
+    },
+    {
+        "id": 52,
+        "verse": "믿음의 주요 또 온전하게 하시는 이인 예수를 바라보자",
+        "start": 2,
+        "chapter": 12,
+        "bookname": "히브리서"
+    },
+    {
+        "id": 53,
+        "verse": "내가 진실로 속히 오리라",
+        "start": 20,
+        "chapter": 22,
+        "bookname": "요한계시록"
+    },
+    {
+        "id": 54,
+        "verse": "주의 말씀은 내 발에 등이요 내 길에 빛이니이다",
+        "start": 105,
+        "chapter": 119,
+        "bookname": "시편"
+    },
+    {
+        "id": 55,
+        "verse": "너는 청년의 때에 너의 창조주를 기억하라",
+        "start": 1,
+        "chapter": 12,
+        "bookname": "전도서"
+    },
+    {
+        "id": 56,
+        "verse": "여호와로 기뻐하는 것이 너희의 힘이니라",
+        "start": 10,
+        "chapter": 8,
+        "bookname": "느헤미야"
+    },
+    {
+        "id": 57,
+        "verse": "무릇 지킬 만한 것보다 더욱 네 마음을 지키라",
+        "start": 23,
+        "chapter": 4,
+        "bookname": "잠언"
+    },
+    {
+        "id": 58,
+        "verse": "온유한 자는 복이 있나니",
+        "start": 5,
+        "chapter": 5,
+        "bookname": "마태복음"
+    },
+    {
+        "id": 59,
+        "verse": "나는 포도나무요 너희는 가지라",
+        "start": 5,
+        "chapter": 15,
+        "bookname": "요한복음"
+    },
+    {
+        "id": 60,
+        "verse": "신실하신 주께서 너희를 굳건하게 하시고",
+        "start": 3,
+        "chapter": 3,
+        "bookname": "데살로니가후서"
+    },
+    {
+        "id": 61,
+        "verse": "하나님이 세상을 이처럼 사랑하사",
+        "start": 16,
+        "chapter": 3,
+        "bookname": "요한복음"
+    },
+    {
+        "id": 62,
+        "verse": "복 있는 사람은 악인들의 꾀를 따르지 아니하며",
+        "start": 1,
+        "chapter": 1,
+        "bookname": "시편"
+    },
+    {
+        "id": 63,
+        "verse": "네 시작은 미약하였으나 네 나중은 심히 창대하리라",
+        "start": 7,
+        "chapter": 8,
+        "bookname": "욥기"
+    },
+    {
+        "id": 64,
+        "verse": "그런즉 믿음, 소망, 사랑 이 세 가지는 항상 있을 것인데",
+        "start": 13,
+        "chapter": 13,
+        "bookname": "고린도전서"
+    },
+    {
+        "id": 65,
+        "verse": "내가 하나님께 가까이 함이 내게 복이라",
+        "start": 28,
+        "chapter": 73,
+        "bookname": "시편"
+    },
+    {
+        "id": 66,
+        "verse": "의를 위하여 박해를 받은 자는 복이 있나니",
+        "start": 10,
+        "chapter": 5,
+        "bookname": "마태복음"
+    },
+    {
+        "id": 67,
+        "verse": "아무 것도 염려하지 말고",
+        "start": 6,
+        "chapter": 4,
+        "bookname": "빌립보서"
+    },
+    {
+        "id": 68,
+        "verse": "나는 생명의 떡이니",
+        "start": 35,
+        "chapter": 6,
+        "bookname": "요한복음"
+    },
+    {
+        "id": 69,
+        "verse": "긍휼이 풍성하신 하나님이",
+        "start": 4,
+        "chapter": 2,
+        "bookname": "에베소서"
+    },
+    {
+        "id": 70,
+        "verse": "내 형제들아 너희가 여러 가지 시험을 당하거든 온전히 기쁘게 여기라",
+        "start": 2,
+        "chapter": 1,
+        "bookname": "야고보서"
+    },
+    {
+        "id": 71,
+        "verse": "주의 성령이 내게 임하셨으니",
+        "start": 18,
+        "chapter": 4,
+        "bookname": "누가복음"
+    },
+    {
+        "id": 72,
+        "verse": "내가 율법이나 선지자를 폐하러 온 줄로 생각하지 말라",
+        "start": 17,
+        "chapter": 5,
+        "bookname": "마태복음"
+    },
+    {
+        "id": 73,
+        "verse": "복음에는 하나님의 의가 나타나서",
+        "start": 17,
+        "chapter": 1,
+        "bookname": "로마서"
+    },
+    {
+        "id": 74,
+        "verse": "그리스도 안에서 새로운 피조물이라",
+        "start": 17,
+        "chapter": 5,
+        "bookname": "고린도후서"
+    },
+    {
+        "id": 75,
+        "verse": "진리를 알지니 진리가 너희를 자유롭게 하리라",
+        "start": 32,
+        "chapter": 8,
+        "bookname": "요한복음"
+    },
+    {
+        "id": 76,
+        "verse": "서로 짐을 지라 그리하여 그리스도의 법을 성취하라",
+        "start": 2,
+        "chapter": 6,
+        "bookname": "갈라디아서"
+    },
+    {
+        "id": 77,
+        "verse": "너희 몸은 성령의 전인 줄을 알지 못하느냐",
+        "start": 19,
+        "chapter": 6,
+        "bookname": "고린도전서"
+    },
+    {
+        "id": 78,
+        "verse": "내가 문 밖에 서서 두드리노니",
+        "start": 20,
+        "chapter": 3,
+        "bookname": "요한계시록"
+    }
+]
