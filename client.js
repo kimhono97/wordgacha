@@ -30,10 +30,15 @@ WordChoiceViewer.CANVAS_MAXWIDTH = 4000;
 WordChoiceViewer.CANVAS_MAXHEIGHT = 4000;
 
 WordChoiceViewer.s_GetURLParam = function (sname) {
-    if (typeof sname != "string")   sname = "";
-
+    if (typeof sname != "string") {
+        sname = "";
+    }
     let strParam = location.search.slice(location.search.indexOf("?") + 1);
     let params = strParam.split("&");
+    if (params[0] && params[0].startsWith("h=")) {
+        strParam = atob(decodeURIComponent(params[0].slice(2)));
+        params = strParam.split("&");
+    }
     for (let i = 0; i < params.length; i++) {
         temp = params[i].split("=");
         if (temp[0] == sname) {
