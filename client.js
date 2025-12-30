@@ -3,12 +3,14 @@ function WordChoiceViewer(pRootNode, pOptions) {
     // Settings
     this.m_nWno = (Math.random() * 1000) | 0;
     this.m_strYear = "";
+    this.m_strTarget = "";
     this.m_nOptIdx = 0;
     this.m_nScale = 1;
     this.m_pWInfo = null;
     this.m_pOptions = pOptions;
     this.m_pImgMap = new Object();
     this.m_strBgColor = "#5F9EA0";
+    this.m_bDebug = false;
 
     // DOM Elements
     this.m_pRootNode = pRootNode;
@@ -35,14 +37,24 @@ WordChoiceViewer.s_GetURLParam = function (sname) {
     }
     let strParam = location.search.slice(location.search.indexOf("?") + 1);
     let params = strParam.split("&");
-    if (params[0] && params[0].startsWith("h=")) {
-        strParam = atob(decodeURIComponent(params[0].slice(2)));
-        params = strParam.split("&");
-    }
+    let hash = "";
     for (let i = 0; i < params.length; i++) {
         temp = params[i].split("=");
         if (temp[0] == sname) {
             return temp[1];
+        }
+        if (temp[0] == "h") {
+            hash = temp[1];
+        }
+    }
+    if (hash) {
+        strParam = atob(decodeURIComponent(hash));
+        params = strParam.split("&");
+        for (let i = 0; i < params.length; i++) {
+            temp = params[i].split("=");
+            if (temp[0] == sname) {
+                return temp[1];
+            }
         }
     }
     return "";
@@ -141,6 +153,8 @@ WordChoiceViewer.prototype = {
         if (strTarget) {
             this.m_strTarget = strTarget;
         }
+
+        this.m_bDebug = !!WordChoiceViewer.s_GetURLParam("debug");
     },
     initLayout: function() {
         if (!this.m_pRootNode) {
@@ -233,13 +247,16 @@ WordChoiceViewer.prototype = {
         let pLogger = document.createElement("textarea");
         pLogger.classList.add("wc-comp-logger");
         pLogger.style.opacity = 0;
-        pLogger.addEventListener("click", function (event) {
-            if (pLogger.style.opacity == 0) {
-                pLogger.style.opacity = 0.5;
-            } else {
-                pLogger.style.opacity = 0;
-            }
-        });
+        if (this.m_bDebug) {
+            pLogger.addEventListener("click", function (event) {
+                if (pLogger.style.opacity == 0) {
+                    pLogger.style.opacity = 0.5;
+                } else {
+                    pLogger.style.opacity = 0;
+                }
+            });
+            pLogger.style.cursor = "pointer";
+        }
         pLogger.readOnly = true;
         pRootNode.appendChild(pLogger);
         this.m_pLogger = pLogger;
@@ -412,10 +429,13 @@ WordChoiceViewer.prototype = {
         this.m_nRenderTimeout = setTimeout(WordChoiceViewer.s_BindFunc(this, this.render), 3000);
     },
     drawContent: function (pCtx, pAreaSize, pContStyle) {
-        // pCtx.fillStyle = "rgba(255, 0, 0, 0.1)";
-        // pCtx.fillRect(pAreaSize.x, pAreaSize.y, pAreaSize.width, pAreaSize.height);
+        if (this.m_bDebug) {
+            pCtx.fillStyle = "rgba(255, 0, 0, 0.1)";
+            pCtx.fillRect(pAreaSize.x, pAreaSize.y, pAreaSize.width, pAreaSize.height);
+        }
+        
 
-        let nFontSize = Math.floor(Math.min(pAreaSize.width, pAreaSize.height) / 14);
+        let nFontSize = Math.floor(Math.min(pAreaSize.width, pAreaSize.height) / 16);
         let strFontFamily = "Noto Sans KR";
         let nLineHeight = Math.ceil(nFontSize * 1.8);
         let strFontColor = "rgba(0, 0, 0, 0.8)";
