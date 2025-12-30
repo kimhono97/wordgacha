@@ -416,7 +416,7 @@ WordChoiceViewer.prototype = {
         // pCtx.fillRect(pAreaSize.x, pAreaSize.y, pAreaSize.width, pAreaSize.height);
 
         let nFontSize = Math.floor(Math.min(pAreaSize.width, pAreaSize.height) / 14);
-        let strFontFamily = "PretendardMedium";
+        let strFontFamily = "Noto Sans KR";
         let nLineHeight = Math.ceil(nFontSize * 1.8);
         let strFontColor = "rgba(0, 0, 0, 0.8)";
         // let strText = this.m_pWInfo.verse;
@@ -440,7 +440,7 @@ WordChoiceViewer.prototype = {
         pCtx.textAlign = "center";
         pCtx.textBaseline = "top";
         pCtx.fillStyle = strFontColor;
-        pCtx.font = `bold ${nFontSize}px ${strFontFamily}`;
+        pCtx.font = `${nFontSize}px ${strFontFamily}`;
 
         let pTextMetrics = pCtx.measureText(strText);
         let nMaxWidth = pAreaSize.width * 0.95;
